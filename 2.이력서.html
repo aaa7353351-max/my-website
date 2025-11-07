@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>MyWebsite - 이력서</title>
+    <link rel="stylesheet" href="./과제꾸미기.css" />
+    <style>
+      table {
+        width: 100%;
+        font-weight: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1>이력서</h1>
+      <p class="small">간단 표 형식으로 구성</p>
+    </header>
+
+    <nav class="mainnav">
+      <ul>
+        <li><a href="./1.메인.html">메인화면</a></li>
+        <li><a href="./2.이력서.html">이력서</a></li>
+        <li><a href="./3.자주가는사이트.html">자주가는 사이트</a></li>
+        <li><a href="./4.연락처.html">연락처</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <section class="card" style="grid-column: 1 / -1">
+        <h2>근무 이력</h2>
+
+        <table id="part">
+          <thead>
+            <tr>
+              <th>이름</th>
+              <th>이력</th>
+              <th>년도</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2">노정은</td>
+              <td>졸업</td>
+              <td>~2022</td>
+            </tr>
+            <tr>
+              <!-- 이름 셀은 위에서 이미 rowspan=2 로 합쳐졌기 때문에 이 행에는 안 넣음 -->
+              <td>웹툰</td>
+              <td>~2024</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="small" style="margin-top: 12px">
+          원하는 내용(학력, 기술스택 등)을 아래에 추가하세요.
+        </p>
+      </section>
+
+      <aside class="card" id="under1">
+        <h3>스킬 요약</h3>
+        <ul class="small">
+          <li>HTML/CSS 기초</li>
+          <li>반응형 레이아웃(간단)</li>
+          <li>시맨틱 마크업</li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer class="sitefoot">2025 © MyWebsite</footer>
+  </body>
+</html>
